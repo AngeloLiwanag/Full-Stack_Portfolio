@@ -1,7 +1,9 @@
 /* -------------------- Home ------------------- */
 .angelo-pic{
-    max-height: 300px;
+    max-height: 400px;
+    height: auto;
     max-width: 100%
+    width:auto;
 }
 
 .text-neon{
