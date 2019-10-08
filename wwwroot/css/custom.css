@@ -1,7 +1,7 @@
 /* -------------------- Home ------------------- */
-.angelo-pic{
-    max-width:300px;
-}
+/* .angelo-pic{
+    max-width: 400px;
+} */
 
 .text-neon{
     color:#609;
@@ -49,11 +49,17 @@
     .img-div{
         display: none;
     }
+    .angelo-pic{
+        max-width: 200px;
+    }
 }
 
 @media screen and (min-width:601px){
     #map{
         height: 275px;
+    }
+    .angelo-pic{
+        max-width: 400px;
     }
 }
 
@@ -61,11 +67,17 @@
     #map{
         height: 300px;
     }
+    .angelo-pic{
+        max-width: 500px;
+    }
 }
 
 @media screen and (min-width:992px){
     #map {
         height: 450px;
         width: 450px;
+    }
+    .angelo-pic{
+        max-width: 400px;
     }
 }
