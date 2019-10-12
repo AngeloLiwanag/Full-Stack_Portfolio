@@ -1,74 +1,78 @@
 /* -------------------- Home ------------------- */
-.angelo-pic{
-    max-height: 350px;
-    height: auto;
-    max-width: 100%;
-    width:auto;
+.angelo-pic {
+  object-fit: cover;
+  max-height: 350px;
+  height: auto;
+  max-width: 100%;
+  width: auto;
 }
 
-.text-neon{
-    color:#609;
-}
-.hr-black{
-    height: 1px;
-    color: #fff;
-    background: black;
-    border: none;
+.text-neon {
+  color: #609;
 }
 
-.text-spread-1{
-    letter-spacing: 15px;
+.hr-black {
+  height: 1px;
+  color: #fff;
+  background: black;
+  border: none;
 }
 
-.text-spread-2{
-    letter-spacing: 7.5px;
+.text-spread-1 {
+  letter-spacing: 15px;
 }
 
-.text-size{
-    font-size: 1rem;
+.text-spread-2 {
+  letter-spacing: 7.5px;
 }
 
-.img-contact{
-    max-height: 500px;
+.text-size {
+  font-size: 1rem;
 }
 
-.fade-in{
-    animation: fadeIn 3s;
+.img-contact {
+  max-height: 500px;
 }
 
-.project{
-    height: auto;
-    max-width: 100%;
+.fade-in {
+  animation: fadeIn 3s;
 }
+
+.project {
+  height: auto;
+  max-width: 100%;
+}
+
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-@media screen and (max-width:600px){
-    .img-div{
-        display: none;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-@media screen and (min-width:601px){
-    #map{
-        height: 275px;
-    }
+@media screen and (max-width: 600px) {
+  .img-div {
+    display: none;
+  }
 }
 
-@media screen and (min-width:690px){
-    #map{
-        height: 300px;
-    }
+@media screen and (min-width: 601px) {
+  #map {
+    height: 275px;
+  }
 }
 
-@media screen and (min-width:992px){
-    #map {
-        height: 450px;
-        width: 450px;
-    }
+@media screen and (min-width: 690px) {
+  #map {
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #map {
+    height: 450px;
+    width: 450px;
+  }
 }
