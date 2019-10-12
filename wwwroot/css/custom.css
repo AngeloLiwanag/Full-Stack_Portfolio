@@ -54,12 +54,7 @@
 
 @media screen and (max-width: 425px) {
   .angelo-pic {
-    object-fit: cover;
-    /* max-height: 250px; */
-    height: 255px;
-    /* max-width: 100%;
-    min-width: 125px; */
-    width: 190px;
+    display: none;
   }
 }
 
