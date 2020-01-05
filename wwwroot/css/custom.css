@@ -88,6 +88,9 @@
   .no-col{
     display: none;
   }
+  .col-margin{
+    margin-top: 25px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -98,7 +101,8 @@
 
 @media screen and (min-width: 601px) {
   #map {
-    height: 275px;
+    height: 300px;
+    margin-left:100px;
   }
 }
 
