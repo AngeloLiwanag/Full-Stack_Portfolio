@@ -19,35 +19,32 @@
     <link rel="stylesheet" href="~/css/site.css" />
     <script src="https://kit.fontawesome.com/28d5bf3399.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Playfair+Display&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Angelo Liwanag</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-success" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-success" asp-area="" asp-controller="Home" asp-action="About">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-success" asp-area="" asp-controller="Home" asp-action="Project">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-success" asp-area="" asp-controller="Home" asp-action="Resume">Resume</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-success" asp-area="" asp-controller="Home" asp-action="Contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm border-0">
+            <a class="navbar-brand logo" asp-area="" asp-controller="Home" asp-action="Index"><img class="img-fluid logo" src="~/images/Angelo_Logo.png" alt="Logo"></a>
+            <button class="navbar-toggler toggle-outline" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarColor03">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a style="font-size: 1.1em; font-family: 'Marcellus SC', serif;" class="nav-link text-primary text-capitalize" asp-area="" asp-controller="Home" asp-action="About">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="font-size: 1.1em; font-family: 'Marcellus SC', serif;" class="nav-link text-primary text-capitalize" asp-area="" asp-controller="Home" asp-action="Project">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="font-size: 1.1em; font-family: 'Marcellus SC', serif;" class="nav-link text-primary text-capitalize" asp-area="" asp-controller="Home" asp-action="Resume">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="font-size: 1.1em; font-family: 'Marcellus SC', serif;" class="nav-link text-primary text-capitalize" asp-area="" asp-controller="Home" asp-action="Contact">Contact</a>
+                    </li>
+                </ul>
             </div>
         </nav>
     </header>
@@ -58,10 +55,14 @@
         </main>
     </div>
     <div class="p-5"></div>
-    <footer class="border-top bg-white footer text-muted">
-        <div class="container text-dark">
-            &copy; 2020 - Angelo Liwanag - <i class="fab fa-github-square text-success"></i> <a href="https://github.com/AngeloLiwanag" target="_blank">Github</a> <i class="fab fa-linkedin text-success"></i> <a href="https://www.linkedin.com/in/angelo-liwanag/" target="_blank">LinkedIn</a>
+    <footer class="bg-white footer text-muted">
+        <div style="font-size: .7rem" class="position-relative img-fluid">
+            <span style="right: 10px;" class="position-absolute">&copy;ANGELO LIWANAG 2020. ALL RIGHTS RESERVED.</span>
+            <span style="right: 10px;" class="position-absolute mt-4">WEBSITE BY YOURS TRULY.</span>
         </div>
+        @* <div class="container text-dark">
+            &copy; 2020 - Angelo Liwanag - <i class="fab fa-github-square text-success"></i> <a href="https://github.com/AngeloLiwanag" target="_blank">Github</a> <i class="fab fa-linkedin text-success"></i> <a href="https://www.linkedin.com/in/angelo-liwanag/" target="_blank">LinkedIn</a>
+        </div> *@
     </footer>
 
     <environment include="Development">
