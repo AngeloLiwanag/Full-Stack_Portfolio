@@ -19,4 +19,9 @@ $(document).ready(function(){
     $('.headshot img').animate({
         opacity: "1"
     }, 1000);
+
+    // $('.introduction p').animate({
+    //     width: '+=100%'
+
+    // }, 1000);
 });

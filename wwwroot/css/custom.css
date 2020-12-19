@@ -3,9 +3,21 @@
 .spicy-title {
   display: inline-block; 
   font-family: 'Marcellus SC', serif; 
-  border-bottom: 2px solid #949B95;
+  /* border-bottom: 2px solid #949B95; */
+  padding-bottom: 5px;
   letter-spacing: 8px;
   margin-bottom: 20px;
+  position: relative;
+}
+
+.spicy-title:before{
+  content: "";
+  position: absolute;
+  width: 110%;
+  height: 1px;
+  bottom: 0;
+  left: 0%;
+  border-bottom: 1px solid #949B95;
 }
 
 .navbar {
@@ -171,7 +183,9 @@
 }
 
 .skill-sets-desktop {
-  display: block;
+  display: grid;
+  grid-template-columns: repeat(3, 33.33%);
+  gap: 30px;
 }
 
 .skill-sets-desktop p {
@@ -209,6 +223,10 @@
     position: absolute;
   }
 
+  .introduction p, .skill-sets p {
+    font-size: 1rem;
+  }
+
   .introduction h2 {
     text-align: center;
     display: block;
@@ -223,8 +241,11 @@
     display: block;
   }
 
+  .skill-sets h3{
+    font-size: 1.3rem !important;
+  }
+
   .skill-sets {
-    margin-bottom: 20px;
     display: block;
   }
 
@@ -303,7 +324,7 @@
   height: 80vh;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 515px) {
   .contact-grid {
     display: grid;
     place-items: center;
@@ -311,15 +332,15 @@
     height: 100%;
   }
   .contact-grid a, .contact-grid p, .contact-grid b{
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .contact-grid h5{
-    font-size: 1.4rem;
+    font-size: .8rem !important;
   }
 
   .contact-grid h3{
-    font-size: 1.7rem !important;
+    font-size: 1.3rem !important;
   }
 }
 
@@ -334,9 +355,21 @@
 .spicy-project-title {
   display: inline-block; 
   font-family: 'Marcellus SC', serif; 
-  border-bottom: 2px solid #949B95;
+  /* border-bottom: 2px solid #949B95; */
+  padding-bottom: 5px;
+  position: relative;
   letter-spacing: 8px;
   margin-bottom: 20px;
+}
+
+.spicy-project-title:before{
+  content: "";
+  position: absolute;
+  width: 110%;
+  height: 1px;
+  bottom: 0;
+  left: 0%;
+  border-bottom: 1px solid #949B95;
 }
 
 .project-hero-grid p {
