@@ -1,4 +1,7 @@
 /* -------------------- Nav Bar ------------------- */
+.view-port {
+  overflow: hidden;
+}
 
 .spicy-title {
   display: inline-block; 
