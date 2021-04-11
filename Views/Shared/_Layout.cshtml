@@ -6,7 +6,8 @@
     <title>Angelo Liwanag - @ViewData["Title"]</title>
 
     <environment include="Development">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/lux/bootstrap.min.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        @* <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/lux/bootstrap.min.css" /> *@
     </environment>
     <environment exclude="Development">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -15,15 +16,19 @@
               crossorigin="anonymous"
               integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"/>
     </environment>
-    <link rel="stylesheet" href="~/css/custom.css">
-    <link rel="stylesheet" href="~/css/site.css" />
+    @* <link rel="stylesheet" href="~/css/custom.css">
+    <link rel="stylesheet" href="~/css/site.css" /> *@
     <script src="https://kit.fontawesome.com/28d5bf3399.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/mobile.css" />
+    <link rel="stylesheet" href="~/css/tablet.css" />
+    <link rel="stylesheet" href="~/css/desktop.css" />
+
 </head>
 <body>
-    <header>
+    @* <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm border-0">
             <a class="navbar-brand logo" asp-area="" asp-controller="Home" asp-action="Index"><img class="img-fluid logo" src="~/images/Angelo_Logo.png" alt="Logo"></a>
             <button class="navbar-toggler toggle-outline" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,23 +52,23 @@
                 </ul>
             </div>
         </nav>
-    </header>
-    <div class="container">
+    </header> *@
+    <div>
         <partial name="_CookieConsentPartial" />
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
-    <div class="p-5"></div>
+    @* <div class="p-5"></div>
     <footer class="bg-white footer text-muted">
         <div style="font-size: .7rem" class="position-relative img-fluid">
             <span style="right: 10px;" class="position-absolute">&copy;ANGELO LIWANAG 2020. ALL RIGHTS RESERVED.</span>
             <span style="right: 10px;" class="position-absolute mt-4">WEBSITE BY YOURS TRULY.</span>
-        </div>
+        </div> *@
         @* <div class="container text-dark">
             &copy; 2020 - Angelo Liwanag - <i class="fab fa-github-square text-success"></i> <a href="https://github.com/AngeloLiwanag" target="_blank">Github</a> <i class="fab fa-linkedin text-success"></i> <a href="https://www.linkedin.com/in/angelo-liwanag/" target="_blank">LinkedIn</a>
         </div> *@
-    </footer>
+    @* </footer> *@
 
     <environment include="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>

@@ -1,0 +1,691 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 2560px;
+}
+
+/*************************************************
+ *
+ *  --  Nav Bar Css
+ *
+ *************************************************/
+@media only screen and (min-width: 1285px) {
+  .navbar-container {
+    display: flex;
+    padding: 25px 50px;
+    justify-content: space-between;
+    z-index: 1;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    transition: all 0.2s;
+  }
+
+  .landing-container > section:nth-child(1) {
+    /* background-color: white;
+    position: relative; */
+    order: 1;
+  }
+  .landing-container > section:nth-child(2) {
+    /* background-color: #0e1421;
+    display: grid;
+    place-items: center;
+    position: relative; */
+    order: 2;
+  }
+
+  .introduction-container > div {
+    height: 60%;
+    width: 65%;
+    position: relative;
+    top: 30%;
+    left: 0rem;
+  }
+
+  .navbar-container .nav-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #0e1421;
+  }
+
+  .navbar-container .nav-logo span {
+    margin: 0px 5px;
+  }
+
+  .navbar-container .nav-photo {
+    background-color: #efeeed;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    background-image: url("../uploads/nav-photo.png");
+
+  }
+
+  .navbar-container .nav-name {
+    /* [[-- Change To Appropriate Google Font --]] */
+    font-family: "Times New Roman", Times, serif;
+    font-size: larger;
+    font-weight: bolder;
+    font-size: 1.4rem;
+  }
+
+  .navbar-container .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 25px;
+  }
+
+  .navbar-container .nav-links a:hover {
+    text-decoration: underline;
+  }
+
+  .desktop-links {
+    display: block;
+  }
+
+  .mobile-links {
+    display: none;
+  }
+
+  .introduction-container {
+    height: 100vh;
+  }
+
+}
+
+/*************************************************
+ *
+ *  --  Footer Css
+ *
+ *************************************************/
+.footer {
+  display: flex;
+  padding: 25px 50px;
+  justify-content: flex-end;
+}
+
+.footer span {
+  color: rgb(0, 0, 0);
+  text-align: right;
+  display: block;
+  font-size: 0.7rem;
+}
+
+/*************************************************
+ *
+ *  --  Landing Section CSS
+ *
+ *************************************************/
+@media only screen and (min-width: 1285px) {
+  .landing-container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0px;
+  }
+
+  .landing-container > section:nth-child(1) {
+    background-color: white;
+    position: relative;
+  }
+  .landing-container > section:nth-child(2) {
+    background-color: #0e1421;
+    display: grid;
+    place-items: center;
+    position: relative;
+  }
+
+  .introduction-container > div {
+    height: 60%;
+    width: 65%;
+    position: relative;
+    top: 30%;
+  }
+
+  .introduction-container > div > h1 {
+    margin-left: 20px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    font-size: 3rem;
+    letter-spacing: 7px;
+  }
+
+  .introduction-container > div > hr {
+    height: 3px;
+  }
+
+  .introduction-container > div > span {
+    margin-left: 20px;
+    display: block;
+  }
+
+  .introduction-container > div > button {
+    background-color: black;
+    border: none;
+    padding: 10px 30px;
+    color: white;
+    font-size: 0.8rem;
+    margin-left: 20px;
+  }
+
+  .description-container > div {
+    height: 70%;
+    width: 125%;
+    background-color: #efeeed;
+    transform: translateX(-15%);
+    background-image: url("../uploads/AngeloLiwanag.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 3px 3px 20px rgb(0, 0, 0, 0.1);
+  }
+
+  .introduction-container .social {
+    margin-left: 20px;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .social > svg {
+    margin: 5px;
+  }
+
+  .social > svg:hover {
+    cursor: pointer;
+  }
+}
+
+/*************************************************
+ *
+ *  --  Projects Section CSS
+ *
+ *************************************************/
+@media only screen and (min-width: 1272px) {
+  .projects-container {
+    background-color: #efeeed;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    overflow: hidden;
+  }
+
+  .projects-container > section {
+    position: relative;
+    place-items: center;
+  }
+
+  .blurb-container {
+    display: grid;
+  }
+
+  .blurb-container span {
+    font-size: 3rem;
+    letter-spacing: 5px;
+  }
+
+  .card-container {
+    display: grid;
+    place-items: center;
+    padding: 100px 50px;
+  }
+
+  .card-container .project-card {
+    background-color: white;
+    padding: 10px;
+    position: relative;
+    box-shadow: 0px 3px 10px rgb(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    max-width: 1000px;
+    width: 60vw;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /* place-items: center; */
+    transform: translateX(-30px);
+  }
+
+  .project-card .project-img {
+    height: 264px;
+    width: 400px;
+    background-color: #b1b1b1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .project-card:nth-child(1) .project-img {
+    background-image: url("../uploads/bright-project.png");
+  }
+
+  .project-card:nth-child(2) .project-img {
+    background-image: url("../uploads/american-project.png");
+  }
+
+  .project-card:nth-child(3) .project-img {
+    background-image: url("../uploads/supreme-project.png");
+  }
+
+  .project-card .project-detail {
+    padding: 30px;
+  }
+
+  .project-card .project-detail > h3 {
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+  }
+
+  .project-card .project-detail > p {
+    color: #626262;
+    max-width: 500px;
+  }
+
+  .project-card .project-detail > a, .project-card .project-detail > button {
+    background-color: black;
+    border: none;
+    padding: 10px 30px;
+    color: white;
+    font-size: 0.8rem;
+    text-decoration: none;
+  }
+}
+
+/*************************************************
+ *
+ *  --  About Section CSS
+ *
+ *************************************************/
+@media only screen and (min-width: 1285px) {
+  .about-container {
+    min-height: 100vh;
+    padding: 50px;
+  }
+
+  .about-blurb {
+    min-height: 40vh;
+    background-color: #0e1421;
+    position: relative;
+    padding: 50px;
+    margin-bottom: 50px;
+  }
+
+  .about-blurb span {
+    font-size: 3rem;
+    letter-spacing: 5px;
+    color: white;
+  }
+
+  .about-blurb .social {
+    position: absolute;
+    margin: 20px;
+    bottom: 0;
+    right: 0px;
+  }
+
+  .about-grid {
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 50px;
+  }
+
+  .about-grid .about-photo {
+    background-image: url("../uploads/about-img.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .about-grid .about-info {
+    background-color: #f7f7f7;
+    padding: 100px;
+    display: grid;
+    place-items: center;
+  }
+
+  .about-grid .about-info span {
+    font-size: 2rem;
+    color: #343434;
+  }
+}
+
+/* [[-- Desktop View--]] */
+@media only screen and (min-width: 1440px) {
+  .about-grid .about-info span {
+    line-height: 3rem;
+  }
+}
+
+/* [[-- Monitor View --]] */
+@media only screen and (min-width: 1800px) {
+  .about-grid .about-info span {
+    line-height: 5rem;
+  }
+}
+
+/*************************************************
+ *
+ *  --  Skills Section CSS
+ *
+ *************************************************/
+@media only screen and (min-width: 1024px) {
+  .skills-container {
+    min-height: 100vh;
+    padding: 0px 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  }
+
+  .skills-container > section {
+    display: grid;
+    place-items: center;
+  }
+
+  .skills-container .blurb-container {
+    background-color: #f7f7f7;
+  }
+
+  .skills-container > .card-container {
+    padding: 0px;
+  }
+
+  .skills-container > .card-container .skill-card {
+    background-color: white;
+    padding: 50px;
+    position: relative;
+    box-shadow: 0px 3px 10px rgb(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    width: 100%;
+    min-height: 300px;
+  }
+
+  .skills-container > .card-container .skill-card h3 {
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  .skills-container > .card-container .skill-card span {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+/*************************************************
+ *
+ *  --  Contact Section CSS
+ *
+ *************************************************/
+@media only screen and (min-width: 1285px) {
+  .connect-container {
+    min-height: 100vh;
+    padding: 50px;
+  }
+
+  .connect-blurb {
+    min-height: 40vh;
+    background-color: #0e1421;
+    position: relative;
+    padding: 50px;
+    margin-bottom: 50px;
+  }
+
+  .connect-blurb span {
+    font-size: 3rem;
+    letter-spacing: 5px;
+    color: white;
+  }
+
+  .connect-blurb .social {
+    position: absolute;
+    margin: 20px;
+    bottom: 0;
+    right: 0px;
+  }
+
+  .connect-grid {
+    /* [[-- Dynamically Change This --]] */
+    min-height: 30vh;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 50px;
+  }
+
+  .connect-grid .connect-map {
+    display: block;
+  }
+
+  .connect-grid .connect-info {
+    background-color: #f7f7f7;
+    display: grid;
+    place-items: center;
+  }
+
+  .connect-grid .connect-info button {
+    background-color: black;
+    border: none;
+    padding: 10px 30px;
+    color: white;
+    font-size: 0.8rem;
+  }
+
+  .connect-grid label {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .connect-grid input {
+    height: 50px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: none !important;
+    width: 500px;
+  }
+
+  .connect-grid textarea {
+    height: 150px;
+    font-size: 1.2rem;
+    border: none !important;
+    border-radius: none !important;
+    /* width: 500px; */
+  }
+}
+
+/* [[-- Laptop View --]] */
+@media only screen and (min-width: 1024px) {
+  .connect-grid .connect span {
+    line-height: 2.5rem;
+  }
+}
+
+/* [[-- Desktop View--]] */
+@media only screen and (min-width: 1440px) {
+  .connect-grid .connect-info span {
+    line-height: 3rem;
+  }
+}
+
+/* [[-- Monitor View --]] */
+@media only screen and (min-width: 1800px) {
+  .connect-grid .connect-info span {
+    line-height: 5rem;
+  }
+}
+
+/*************************************************
+ *
+ *  --  Resume Section CSS
+ *
+ *************************************************/
+#resumeModal .text-primary {
+  color: #46629e !important;
+}
+
+#resumeModal i {
+  margin-right: 5px;
+}
+
+#resumeModal p {
+  color: #646464 !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .extend-view {
+    width: 115% !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .resume-logo {
+    max-height: 60px;
+  }
+
+  .mobile-resume {
+    padding: 20px;
+  }
+
+  .mobile-resume .col-md-6 {
+    margin: 0px -15px;
+  }
+
+  .mobile-resume a,
+  .mobile-resume p,
+  .mobile-resume b {
+    font-size: 1rem;
+  }
+
+  .mobile-resume h5 {
+    font-size: 0.8rem !important;
+  }
+
+  .mobile-resume h3 {
+    font-size: 1.3rem !important;
+  }
+}
+
+@media only screen and (min-width: 991px) {
+  .resume-logo {
+    max-height: 80px;
+    margin-left: 15px;
+  }
+}
+
+.spicy-resume-title {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+#myModal {
+  position: fixed;
+  z-index: 1;
+  padding: 50px 30px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+#project-modal {
+  position: fixed;
+  z-index: 1;
+  padding: 50px 30px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+
+.turn-on-light {
+  display: flex;
+  justify-content: center;
+}
+
+.turn-off-light {
+  display: none;
+}
+
+.close {
+  color: white;
+  position: absolute;
+  top: -35px;
+  right: -35px;
+  font-size: 35px;
+  font-weight: bold;
+  z-index: 101;
+  transition: 0.6s ease;
+}
+
+.close:hover,
+.close:focus {
+  color: grey;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  user-select: none;
+  -webkit-user-select: none;
+  top: 50%;
+  z-index: 100;
+}
+
+.next {
+  right: 10px;
+}
+
+.prev {
+  left: 10px;
+}
+
+.prev:hover,
+.next:hover {
+  text-decoration: none;
+  color: grey;
+}
+
+.modal-content {
+  z-index: 100;
+  background-color: white;
+  position: relative;
+  height: 100%;
+  max-height: 30vh;
+  max-width: 75vw;
+  border-radius: 0px;
+}
+
+#modalImg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-img {
+  height: auto;
+  width: 100%;
+  position: relative;
+  transition: 0.6s ease;
+}
