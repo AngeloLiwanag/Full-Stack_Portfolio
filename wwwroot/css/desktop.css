@@ -335,7 +335,7 @@ html {
   }
 
   .about-grid .about-photo {
-    background-image: url("../uploads/about-img.png");
+    background-image: url("../uploads/about-photo.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;

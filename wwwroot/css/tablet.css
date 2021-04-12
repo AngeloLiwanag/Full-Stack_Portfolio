@@ -220,7 +220,6 @@
     min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
-    /* background-color: red; */
   }
 
   .projects-container > section {
